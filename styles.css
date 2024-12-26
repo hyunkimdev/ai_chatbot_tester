@@ -1,0 +1,157 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f4f7fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+/* Hero section */
+.hero {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #6f42c1, #4a90e2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  color: #4a90e2;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+p {
+  color: #666;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+/* Chatbox */
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+textarea {
+  width: 90%;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 1.1em;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  resize: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+button:active {
+  background-color: #2d6fa4;
+}
+
+/* Response */
+.response {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+  background-color: #f0f8ff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.response.show {
+  display: block;
+}
+
+/* Powered by text */
+.powered-by {
+  margin-top: 30px;
+  font-size: 1em;
+  color: #444;
+}
+
+.powered-by strong {
+  color: #4a90e2;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 1em;
+}
+
+.footer strong {
+  font-size: 1.2em;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  button {
+    padding: 10px 25px;
+    font-size: 1em;
+  }
+}
