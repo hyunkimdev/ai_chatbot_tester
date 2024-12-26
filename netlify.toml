@@ -1,11 +1,17 @@
 [build]
-  command = "" # 빌드 프로세스가 없으므로 빈 값으로 설정
+  # 빌드 프로세스가 없으므로 npm install만 수행
+  command = "npm install"
   publish = "." # 현재 디렉터리를 배포 디렉터리로 설정
   functions = "netlify/functions" # Netlify 함수 디렉터리 설정
 
 [build.environment]
-  NODE_VERSION = "18.20.0" # 로컬에서 사용하는 Node.js 버전
+  # 로컬에서 사용하는 Node.js 버전 명시
+  NODE_VERSION = "18.20.0"
 
 [context.production.environment]
-  # 프로덕션 환경에서의 환경 변수를 설정할 수 있습니다.
+  # 프로덕션 환경에서 사용할 환경 변수 설정
   OPENAI_API_KEY = "your-api-key-here"
+
+[functions]
+  # Netlify에서 함수 번들링에 esbuild를 사용하도록 설정
+  node_bundler = "esbuild"
