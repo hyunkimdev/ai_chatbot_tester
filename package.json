@@ -5,6 +5,8 @@
     "main": "script.js",
     "type": "module",
     "scripts": {
+      "start": "netlify dev",
+      "build": "echo 'No build process required for static site.'",
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
