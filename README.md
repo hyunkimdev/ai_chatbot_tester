@@ -1,1 +1,1 @@
-# chatgpt_api
+# ai_chatbot_tester
